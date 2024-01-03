@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <locale.h>
 #include <time.h>
 
 // Função para trocar os valores de duas variáveis
@@ -29,6 +30,7 @@ void bubbleSort(int array[], int size) {
 }
 
 int main(void) {
+    setlocale(LC_ALL, "Portuguese");
     time_t t;
     time(&t);
     srand((unsigned int)t);
